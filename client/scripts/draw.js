@@ -20,7 +20,6 @@ function change_color(color)
 
 function get_draw(draw_data)
 {
-    var rect = canvas.getBoundingClientRect();
     if (draw_data["shape"] == "circle")
     {
         draw_data["x"] = (draw_data["x"] / 1000.0) * canvas.width;
