@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>QuickDraw</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <style type="text/css">
+        
+span {
+    
+}
+
+#logo {
+    width:20em;
+    height: auto;
+}
+
+#content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.instructions {
+    font-size:2em;
+    width: 100%;
+    margin-top:0.5em;
+    margin-bottom:0.0em;
+    color:black;
+}
+
+.codebox {
+    width: 100%;
+    height: 3em;
+    text-align:center;
+    align-content: center;
+    color:darkblue;
+    font-size:1em;
+    border-radius:0.5em;
+    border-width:0.1em;
+    border-color:black;
+    border-style:solid;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#btn_connect {
+    margin-top: 2em;
+    width: 60%;
+    height: 3em;
+    text-align:center;
+    align-content: center;
+    color:black;
+    font-size:1em;
+    border-radius:0.5em;
+    border-width:0.1em;
+    border-color:#559955;
+    background-color:#BBFFBB;
+    border-style:solid;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+    #btn_connect:hover {
+        background-color:#BBEEBB;
+    }
+
+#footer {
+    position:absolute;
+    bottom: 1em;
+    width:100%;
+    
+}
+
+#footertext {
+    color:#111111;
+    text-align:center;
+    font-weight:normal;
+}
+
+a {
+    color:red;
+    text-decoration:none;
+}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!--<img id="logo" src="logo_text3.png" /><br />-->
+        <p class="instructions">Please specify a room name</p><br />
+        <input id="txt_room" class="codebox" value="Lobby" /><br />
+        <button id="btn_connect" onclick="btn_connect_pressed();">Connect</button>
+    </div>
+    <div id="footer">
+        <p id="footertext">
+        </p>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

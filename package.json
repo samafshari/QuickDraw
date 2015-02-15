@@ -1,0 +1,18 @@
+{
+  "name": "QuickDraw",
+  "version": "1.0.0",
+  "description": "Collaborative Drawing Board",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Saeed Afshari",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "express": "^4.11.2",
+    "node-twitter": "^0.5.2",
+    "socket.io": "^1.3.3"
+  }
+}

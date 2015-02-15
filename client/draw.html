@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>QuickDraw</title>
+    <link rel="stylesheet" href="/styles/app.css" type="text/css" />
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/scripts/draw.js"></script>
+
+    <style type="text/css">
+        body, canvas {
+            
+        }
+
+        #canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        #panel_tools {
+            padding: 0;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 2em;
+            background:rgba(0,0,0,0.2);
+            height:3em;
+            align-content:center;
+            align-items:center;
+        }
+
+        .color_button,.color_button * {
+            width:3em;
+            height:3em;
+            border: thin;
+            box-shadow: #000 0px 0px initial;
+            border-radius: 0.2em;
+            margin:0;
+        }
+
+        .action_button {
+            height: 3em;
+        }
+    </style>
+</head>
+
+<body>
+   <canvas id="canvas" width="1000" height="1000"></canvas>
+    <div id="panel_tools"><center>
+    <button class="action_button" onclick="clear_room();">Wipe</button>
+
+    <button class="color_button" style="background-color:black" onclick="change_color('black');">&nbsp;</button>
+    <button class="color_button" style="background-color:white" onclick="change_color('white');">&nbsp;</button>
+    <button class="color_button" style="background-color:green" onclick="change_color('green');">&nbsp;</button>
+    <button class="color_button" style="background-color:red" onclick="change_color('red');">&nbsp;</button>
+    <button class="color_button" style="background-color:blue" onclick="change_color('blue');">&nbsp;</button>
+    <button class="color_button" style="background-color:purple" onclick="change_color('purple');">&nbsp;</button>
+    <button class="color_button" style="background-color:orange" onclick="change_color('orange');">&nbsp;</button>
+
+    <!--<input class="action_button" id="txt_radius" />
+    <button class="action_button" onclick="change_radius();">Change Thickness</button>-->
+</center>
+    </div>
+</body>
+</html>
