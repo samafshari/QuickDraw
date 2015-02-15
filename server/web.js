@@ -3,12 +3,7 @@ var PORT = 8080;
 var DEFAULT_PAGE = "/index.html";
 
 //Setup
-var sys = require("sys"),
-    url = require("url"),
-    path = require("path"),
-    fs = require("fs"),
-    events = require("events"),
-    express = require('express');
+var express = require('express');
 
 var app = require('express')();
 var http = require('http').Server(app);

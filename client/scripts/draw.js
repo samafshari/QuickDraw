@@ -36,7 +36,7 @@ function get_draw(draw_data)
 function get_room(room_data)
 {
     room_data.forEach(function (e, i) {
-        draw(e);
+        get_draw(e);
     });
 }
 
